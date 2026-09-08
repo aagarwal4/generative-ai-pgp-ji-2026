@@ -1,0 +1,5 @@
+.venv
+.ipynb*
+.DS*
+.env
+class-exercise-1/[SOLUTION] Exercise 1.ipynb
