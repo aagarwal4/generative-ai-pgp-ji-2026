@@ -41,7 +41,7 @@ for doc in documents_raw:
         print("Skipping row due to error:", e)
 
 # TODO: Create embeddings
-# Use: OllamaEmbeddings with llama3.2:1b and pull the model beforehand
+# Use: OllamaEmbeddings with nomic-embed-text and pull the model beforehand
 
 # TODO: Store in Chroma
 # Use Chroma.from_documents() and .as_retriever() on only the first 100 docs
@@ -55,15 +55,15 @@ parser = PydanticOutputParser(pydantic_object=GroceryOutput)
 # Use ChatPromptTemplate.from_template with fields: preferences, context, format_instructions
 
 # TODO: Create a list of LLMs that will be used
-# Use llama-3.3-70b-versatile and 2 other LLMs from Groq - make sure to check leaderboard to explore which ones to use
+# Use gpt-oss-120b and 2 other LLMs from Groq - make sure to check leaderboard to explore which ones to use
 
 model_name_map = {
-    "Llama-3.3": "llama-3.3-70b-versatile"
+    "GPT-OSS-120B": "openai/gpt-oss-120b"
     #INSERT HERE
 }
 
 model_choices = [
-    "Llama-3.3 (70B) (Groq)",
+    "GPT-OSS-120B (Groq)",
     #INSERT HERE
 ]
 # TODO: Model selector
