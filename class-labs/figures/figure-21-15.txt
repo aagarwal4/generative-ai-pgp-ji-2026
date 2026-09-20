@@ -1,0 +1,4 @@
+
+ The image displays a graph with a blue line that goes up and down, indicating a waveform. The graph is labeled with the date, time, and frequency. The time is displayed in the top left corner, while the frequency is shown in the top right corner. The graph is accompanied by a text description, which provides additional information about the waveform.
+
+
